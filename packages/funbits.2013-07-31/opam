@@ -1,0 +1,16 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make]
+  [make "findinstall"]
+]
+remove: [
+  ["ocamlfind" "remove" "funbits"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/ocaml/funbits/"
+(* project: "https://github.com/blue-prawn/ocaml-funbits" *)
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"
