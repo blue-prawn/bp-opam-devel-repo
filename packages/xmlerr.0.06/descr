@@ -1,0 +1,3 @@
+XML parsing with errors
+An experimental/alpha lib which attempts
+to parse XML with errors (useful for HTML.)
