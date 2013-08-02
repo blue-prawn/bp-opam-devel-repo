@@ -1,0 +1,17 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "ftgl"]
+  [make "install_ftgl"
+        "PREFIX=%{lib}%/ftgl"
+        "SO_PREFIX=%{lib}%/stublibs"
+  ]
+]
+remove: [
+  ["ocamlfind" "remove" "ftgl"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/OCaml/GL/"
+authors: ["Florent Monnier"]
