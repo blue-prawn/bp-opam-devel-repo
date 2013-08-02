@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "cxx_all"]
+  [make "install" "OCAML_DIR=%{lib}%" "VERSION=0.06"]
+]
+remove: [
+  ["ocamlfind" "remove" "sfml"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://ocaml-sfml.forge.ocamlcore.org/"
+authors: ["Florent Monnier"]
+license: "zlib/png"
