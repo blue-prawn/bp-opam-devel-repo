@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "lib" "opt"]
+  [make "findinstall"]
+]
+remove: [
+  ["ocamlfind" "remove" "intMath"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/ocaml/int-trigo/"
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"
