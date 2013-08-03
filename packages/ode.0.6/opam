@@ -1,0 +1,17 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make]
+  [make "install_findlib"]
+]
+remove: [
+  ["ocamlfind" "remove" "ode"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/ocaml/ode/"
+authors: [
+  "Richard W.M. Jones"
+]
+license: "LGPL"
