@@ -2,7 +2,7 @@ opam-version: "1"
 maintainer: "blue-prawn"
 
 build: [
-  [make "cxx_all"]
+  [make "cxx_all" "CXX_INC_DIR=/usr/include/SFML2"]
   [make "install" "OCAML_DIR=%{lib}%" "VERSION=0.06"]
 ]
 remove: [
